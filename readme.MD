@@ -17,4 +17,4 @@
 **currencyCodeMapped**: The ISO formatted default currency code to be used if no currency code is found in the import excel file. Examples - https://www.iso.org/iso-4217-currency-codes.html.
 
 **data**: The data object containing some or all of the MyGeotab SDK FuelTransaction properties.
-Refer to the source.json or source-new.json files in this repo.
+Refer to the [source.json](source.json) or *(source-new.json)* files in this repo.
