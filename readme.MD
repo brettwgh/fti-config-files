@@ -10,7 +10,7 @@
 
 **isCellDateType** (default = Y): Boolean value that specifies if the date cell in the Excel file is of a Date format or not. By default, the value is “Y” and indicates that the format is a date in Excel. If it is a date, the software does not check how the dateFormat field is filled. If it is date and time composed by multiple cells (for example, ColumnC + ColumnB), it is mandatory to fill out both fields dateFormat and timeFormat.
 
-**dateFormat**: (**Required**). Specifies the date format to be expected in the transaction file. Some examples follow. 
+**dateFormat** (**Required**): Specifies the date format to be expected in the transaction file. Some examples follow. 
 
 Examples:
 * DD/MM/YYYY
