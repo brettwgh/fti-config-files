@@ -1,6 +1,6 @@
 # Fuel Transaction Import Add-In - Provider Configuration File Structure
 
-## File properties
+## Config File properties
 
 **Name** (Required): Represents the name of the Fuel Provider. This name will be listed in a dropdown menu in the Add-in.
 
@@ -13,3 +13,8 @@
 **dateFormat**: Mandatory. Specifies the format found in the transaction file. Look at the table below in order to know the formats allowed. e.g. DD/MM/YYYY or YYYYDDMM etc.
 
 **timeFormat**: Defines the time format if applicable e.g. HHmmss or HH:mm:ss etc.
+
+**currencyCodeMapped**: The ISO formatted default currency code to be used if no currency code is found in the import excel file. Examples - https://www.iso.org/iso-4217-currency-codes.html.
+
+**data**: The data object containing some or all of the MyGeotab SDK FuelTransaction properties.
+Refer to the source.json or source-new.json files in this repo.
