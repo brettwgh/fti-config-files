@@ -7,13 +7,13 @@ This describes the configuration file structure with it's properties and how to 
 
 **Name** (**Required**): Represents the name of the Fuel Provider. This name will be listed in a dropdown menu in the Add-in to fascilitate the provider selection in the import process.
 
-**unitVolumeLiters** (default = Y): Boolean value that specifies if the fuel in the transaction file is expressed in liters or gallons. Accepts only “Y” or “N".
+**unitVolumeLiters** (default = Y): Y/N (boolean) value that specifies if the fuel in the transaction file is expressed in liters or gallons. Accepts only “Y” or “N".
 
-**unitOdoKm** (default = Y): Boolean value that specifies if the odometer in the transaction file is expressed in km or miles. Accepts only “Y” or “N”.
+**unitOdoKm** (default = Y): Y/N (boolean) value that specifies if the odometer in the transaction file is expressed in km or miles. Accepts only “Y” or “N”.
 
-**isCellDateType** (default = Y): Boolean value that specifies if the date cell in the Excel file is of a Date format or not. By default, the value is “Y” and indicates that the format is a date in Excel. If it is a date, the software does not check how the dateFormat field is filled. If it is date and time composed by multiple cells (for example, ColumnC + ColumnB), it is mandatory to fill out both fields dateFormat and timeFormat.
+**isCellDateType** (default = Y): Y/N (boolean) value that specifies if the date cell in the Excel file is of a Date format or not. By default, the value is “Y” and indicates that the format is a date in Excel. If it is a date, the software does not check how the dateFormat field is filled. If it is date and time composed by multiple cells (for example, ColumnC + ColumnB), it is mandatory to fill out both fields dateFormat and timeFormat.
 
-**dateFormat** (**Required**): Specifies the date format to be expected in the transaction file. Some examples follow. Refer to the [date & time rules](#DateTimeRules) below.
+**dateFormat** (**Required**): Specifies the date format to be expected in the transaction file. This property can include the time depending on whether the time is contained in the same excel column or not, refer to the [date & time rules](#DateTimeRules) below.
 
 Examples:
 * DD/MM/YYYY
@@ -23,15 +23,13 @@ Examples:
 * DD/MM/YYYYTHH:mm:ss.SSSZ
 * etc.
 
-**timeFormat**: Defines the time format if applicable e.g. HHmmss or HH:mm:ss etc. Refer to the [date & time rules](#DateTimeRules) below.
+**timeFormat**: Defines the time format if the date and time values are contained in separate excel columns in the import file e.g. HHmmss or HH:mm:ss etc. Refer to the [date & time rules](#DateTimeRules) below.
 
 **currencyCodeMapped** (default = USD): The ISO formatted currency code to be used if no currency code is found in the import excel file. Examples - https://www.iso.org/iso-4217-currency-codes.html.
 
-**data**: The data JSON object containing some or all of the MyGeotab SDK [FuelTransaction](https://geotab.github.io/sdk/software/api/reference/#FuelTransaction) properties.
+**data**: a JSON object containing some or all of the [FuelTransaction](https://geotab.github.io/sdk/software/api/reference/#FuelTransaction) properties.
 
-Refer to the source files:
-* [source.json](source.json) 
-* [source-new.json](source-new.json)
+A shell source file can be found here [source.json](source.json).
 
 ## <a name="DateTimeRules">Date & Time Rules</a>
 1. **dateFormat** is required
