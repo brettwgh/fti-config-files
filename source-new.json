@@ -7,7 +7,6 @@
             "isCellDateType": "Y",
             "dateFormat": "YYYYMMDD",
             "timeFormat": "HHmmss",
-            "isDateTimeSplit": false,
             "currencyCodeMapped": "",
             "data": {
                 "cardNumber": "",

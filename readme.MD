@@ -29,3 +29,8 @@ Examples:
 Refer to the source files:
 * [source.json](source.json) 
 * [source-new.json](source-new.json)
+
+## Date & Time Rules
+1. **dateFormat** is required
+2. If **date** and **time** are submitted in a **single** excel column then the complete **date and time format** should be provided in the **dateFormat** property of the provider configuration file.
+3. If **date** and **time** are submitted in **separate** excel columns then the **date format** should be provided in the **dateFormat** property and the **time format** should be provided in the **timeFormat** of the provider configuration file.
