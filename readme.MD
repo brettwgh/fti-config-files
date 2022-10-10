@@ -10,7 +10,7 @@
 
 **isCellDateType** (default = Y): Boolean value that specifies if the date cell in the Excel file is of a Date format or not. By default, the value is “Y” and indicates that the format is a date in Excel. If it is a date, the software does not check how the dateFormat field is filled. If it is date and time composed by multiple cells (for example, ColumnC + ColumnB), it is mandatory to fill out both fields dateFormat and timeFormat.
 
-**dateFormat** (**Required**): Specifies the date format to be expected in the transaction file. Some examples follow. 
+**dateFormat** (**Required**): Specifies the date format to be expected in the transaction file. Some examples follow. Refer to the [date & time rules](#DateTimeRules) below.
 
 Examples:
 * DD/MM/YYYY
@@ -20,7 +20,7 @@ Examples:
 * DD/MM/YYYYTHH:mm:ss.SSSZ
 * etc.
 
-**timeFormat**: Defines the time format if applicable e.g. HHmmss or HH:mm:ss etc.
+**timeFormat**: Defines the time format if applicable e.g. HHmmss or HH:mm:ss etc. Refer to the [date & time rules](#DateTimeRules) below.
 
 **currencyCodeMapped** (default = USD): The ISO formatted currency code to be used if no currency code is found in the import excel file. Examples - https://www.iso.org/iso-4217-currency-codes.html.
 
@@ -30,7 +30,7 @@ Refer to the source files:
 * [source.json](source.json) 
 * [source-new.json](source-new.json)
 
-## Date & Time Rules
+## <a name="DateTimeRules">Date & Time Rules</a>
 1. **dateFormat** is required
-2. If **date** and **time** are submitted in a **single** excel column then the complete **date and time format** should be provided in the **dateFormat** property of the provider configuration file.
-3. If **date** and **time** are submitted in **separate** excel columns then the **date format** should be provided in the **dateFormat** property and the **time format** should be provided in the **timeFormat** of the provider configuration file.
+2. If **date** and **time** are submitted in a **single** excel column then the complete **date and time format** should be provided in the **dateFormat** property of the configuration file.
+3. If **date** and **time** are submitted in **separate** excel columns then the **date format** should be provided in the **dateFormat** property and the **time format** should be provided in the **timeFormat** of the configuration file.
