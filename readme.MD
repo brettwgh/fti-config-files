@@ -1,6 +1,9 @@
-# Fuel Transaction Import Add-In - Provider Configuration File Structure
+# Fuel Transaction Import Add-In
 
-## Config File properties
+## Provider Configuration File Structure
+This describes the configuration file structure with it's properties and how to correctly compile it in order to successfully import [fuel transaction data](https://geotab.github.io/sdk/software/api/reference/#FuelTransaction) into the MyGeotab database system.
+
+## Configuration File properties
 
 **Name** (**Required**): Represents the name of the Fuel Provider. This name will be listed in a dropdown menu in the Add-in to fascilitate the provider selection in the import process.
 
