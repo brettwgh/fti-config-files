@@ -24,8 +24,8 @@
                 "vehicleIdentificationNumber": "",
                 "cost": "",
                 "currencyCode": "",
-                "dateTime": "",
-                "location": "",
+                "dateTime": [""],
+                "location": [],
                 "odometer": "",
                 "productType": "",
                 "volume": ""

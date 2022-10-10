@@ -29,7 +29,9 @@ Examples:
 
 **data**: a JSON object containing some or all of the [FuelTransaction](https://geotab.github.io/sdk/software/api/reference/#FuelTransaction) properties.
 
-A shell source file can be found here [source.json](source.json).
+## Examples
+- A shell source file can be found here [source.json](source.json).
+- The generic source reference file can be downloaded from [here](generic.json).
 
 ## <a name="DateTimeRules">Date & Time Rules</a>
 1. **dateFormat** is required
