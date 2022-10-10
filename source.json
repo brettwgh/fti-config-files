@@ -6,7 +6,7 @@
             "unitOdoKm": "Y",
             "isCellDateType": "Y",
             "dateFormat": "YYYYMMDD",
-            "timeFormat": "HHmmss",
+            "timeFormat": "",
             "currencyCodeMapped": "",
             "data": {
                 "cardNumber": "",
