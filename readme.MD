@@ -31,7 +31,8 @@ Examples:
 
 <table>
 <tr><th>Data Metric</th><th>Details</th><th>Example</th></tr>
-<tr><td>Location</td><td>Provide the location data (longitude & latitude) in a single column</td><td>"location":"columny"</td></tr>
+<tr><td>Location</td><td>Provide the location data (longitude & latitude) in a single column</td><td>"location":"columnx"</td></tr>
+<tr><td>Address (Location)</td><td>Provide the address information in a single column</td><td>"address":"columnx"</td></tr>
 </table>
 
 ## Examples
