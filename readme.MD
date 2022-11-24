@@ -29,6 +29,11 @@ Examples:
 
 **data**: a JSON object containing some or all of the [FuelTransaction](https://geotab.github.io/sdk/software/api/reference/#FuelTransaction) properties.
 
+<table>
+<tr><th>Data Metric</th><th>Details</th><th>Example</th></tr>
+<tr><td>Location</td><td>Provide the location data (longitude & latitude) in a single column</td><td>"location":"columny"</td></tr>
+</table>
+
 ## Examples
 - A shell source file can be found here [source.json](source.json).
 - The generic source reference file can be downloaded from [here](generic.json).
