@@ -28,7 +28,8 @@
                 "location": [],
                 "odometer": "",
                 "productType": "",
-                "volume": ""
+                "volume": "",
+                "address": ""
             }
         }
     ]
