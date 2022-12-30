@@ -31,13 +31,18 @@ Examples:
 
 <table>
 <tr><th>Data Metric</th><th>Details</th><th>Example</th></tr>
-<tr><td>Location</td><td>Provide the location data (longitude & latitude) in an array</td>
+<tr>
+    <td>Location</td>
+    <td>Provide the location data (longitude & latitude) in an array</td>
 <td>
-<table>
-<tr><td>x</td><td>number</td><td>Specify x for the longitude.</td></tr>
-<tr><td>y</td><td>number</td><td>Specify y for the latitude.</td></tr>
-</table>
-</td></tr>
+```
+    "location": [
+        "ColumnQ",
+        "ColumnR"
+    ],
+```
+</td>
+</tr>
 <tr><td>Address (Location)</td><td>Provide the address information in a single column</td><td>"address":"columnx"</td></tr>
 </table>
 
