@@ -38,7 +38,7 @@ Examples:
 "location": ["ColumnQ","ColumnR"],
 </td>
 </tr>
-<tr><td>Address (Location)</td><td>Provide the address information in a single column</td><td>"address":"columnx"</td></tr>
+<tr><td>Address (Location)</td><td>Provide the address information in a single column</td><td>"address":"ColumnX"</td></tr>
 </table>
 
 ## Examples
