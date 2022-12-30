@@ -35,10 +35,7 @@ Examples:
     <td>Location</td>
     <td>Provide the location data (longitude & latitude) in an array</td>
 <td>
-"location": [
-    "ColumnQ",
-    "ColumnR"
-],
+"location": ["ColumnQ","ColumnR"],
 </td>
 </tr>
 <tr><td>Address (Location)</td><td>Provide the address information in a single column</td><td>"address":"columnx"</td></tr>
