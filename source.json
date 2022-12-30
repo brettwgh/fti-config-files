@@ -25,7 +25,10 @@
                 "cost": "",
                 "currencyCode": "",
                 "dateTime": [""],
-                "location": [],
+                "location": [
+                    "",
+                    ""
+                ],
                 "odometer": "",
                 "productType": "",
                 "volume": "",
