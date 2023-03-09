@@ -13,18 +13,10 @@ This describes the configuration file structure with it's properties and how to 
 
 **isCellDateType** (default = Y): Y/N (boolean) value that specifies if the date cell in the Excel file is of a Date format or not. By default, the value is “Y” and indicates that the format is a date in Excel. If it is a date, the software does not check how the dateFormat field is filled. If it is date and time composed by multiple cells (for example, ColumnC + ColumnB), it is mandatory to fill out both fields dateFormat and timeFormat.
 
-**dateFormat** (**Required**): Specifies the date format to be expected in the transaction file. This property can include the time depending on whether the time is contained in the same excel column or not, refer to the [date & time rules](#DateTimeRules) below.
-
-Examples:
-* DD/MM/YYYY
-* YYYYDDMM
-* YYYY-MM-DDTHH:mm:ss
-* MM/DD/YYYY HHmmss
-* DD/MM/YYYYTHH:mm:ss.SSSZ
-* etc.
-
-**timeFormat**: Defines the time format if the date and time values are contained in separate excel columns in the import file e.g. HHmmss or HH:mm:ss etc. Refer to the [date & time rules](#DateTimeRules) below. The [luxon library](https://moment.github.io/luxon/#/?id=luxon) has been used to handle dates so where string dates are used, a format needs to be supplied and the correct implementation of these formats can be found here:
+**dateFormat** (**Required**): Specifies the date format to be expected in the transaction file. This property can include the time depending on whether the time is contained in the same excel column or not, refer to the [date & time rules](#DateTimeRules) below. The [luxon library](https://moment.github.io/luxon/#/?id=luxon) has been used to handle dates so where string dates are used, a format needs to be supplied and the correct implementation of these formats can be found here:
 [Luxon format tokens reference](https://moment.github.io/luxon/#/formatting?id=table-of-tokens).
+
+**timeFormat**: Defines the time format if the date and time values are contained in separate excel columns in the import file e.g. HHmmss or HH:mm:ss etc. Refer to the [date & time rules](#DateTimeRules) below.
 
 **currencyCodeMapped** (default = USD): The ISO formatted currency code to be used if no currency code is found in the import excel file. Examples - https://www.iso.org/iso-4217-currency-codes.html.
 
