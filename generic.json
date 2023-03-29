@@ -5,7 +5,7 @@
             "unitVolumeLiters": "Y",
             "unitOdoKm": "Y",
             "isCellDateType": "Y",
-            "dateFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ",
+            "dateFormat": "yyyyMMddHH:mm:ss.SSSZ",
             "timeFormat": "",
             "currencyCodeMapped": "",
             "data": {
