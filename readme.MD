@@ -40,7 +40,7 @@ The data object in the configuration file contains the Fuel Transaction fields t
 - A shell source file can be found here [source.json](source.json).
 - The generic source reference file can be downloaded from [here](generic.json).
 
-## <a name="DateTimeRules">Date & Time Rules</a>
+## <a id="DateTimeRules" name="DateTimeRules">Date & Time Rules</a>
 1. **dateFormat** is required
 2. If **date** and **time** are submitted in a **single** excel column then the complete **date and time format** should be provided in the **dateFormat** property of the configuration file.
 3. If **date** and **time** are submitted in **separate** excel columns then the **date format** should be provided in the **dateFormat** property and the **time format** should be provided in the **timeFormat** of the configuration file.
