@@ -16,7 +16,7 @@ This describes the configuration file structure with it's properties and how to 
 **dateFormat** (**Required**): Specifies the date format to be expected in the transaction file. This property can include the time depending on whether the time is contained in the same excel column or not, refer to the [date & time rules](#DateTimeRules) below. The [luxon library](https://moment.github.io/luxon/#/?id=luxon) has been used to handle dates so where string dates are used, a format needs to be supplied and the correct implementation of these formats can be found here:
 [Luxon format tokens reference](https://moment.github.io/luxon/#/formatting?id=table-of-tokens).
 
-**timeFormat**: Defines the time format if the date and time values are contained in separate excel columns in the import file e.g. HHmmss or HH:mm:ss etc. Refer to the [date & time rules](#DateTimeRules) below.
+**timeFormat**: Defines the time format if the date and time values are contained in separate excel columns in the import file e.g. HHmmss or HH:mm:ss etc. Refer to the [date & time rules](#date-and-time-rules) below.
 
 **currencyCodeMapped** (default = USD): The ISO formatted currency code to be used if no currency code is found in the import excel file. Examples - https://www.iso.org/iso-4217-currency-codes.html.
 
@@ -40,7 +40,7 @@ The data object in the configuration file contains the Fuel Transaction fields t
 - A shell source file can be found here [source.json](source.json).
 - The generic source reference file can be downloaded from [here](generic.json).
 
-## <a id="DateTimeRules" name="DateTimeRules">Date & Time Rules</a>
+## <a id="DateTimeRules" name="DateTimeRules">Date And Time Rules</a>
 1. **dateFormat** is required
 2. If **date** and **time** are submitted in a **single** excel column then the complete **date and time format** should be provided in the **dateFormat** property of the configuration file.
 3. If **date** and **time** are submitted in **separate** excel columns then the **date format** should be provided in the **dateFormat** property and the **time format** should be provided in the **timeFormat** of the configuration file.
