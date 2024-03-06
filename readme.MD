@@ -1,6 +1,7 @@
 # Fuel Transaction Import Add-In
 
 ## Provider Configuration File Structure
+
 This describes the configuration file structure with it's properties and how to correctly compile it in order to successfully import [fuel transaction data](https://geotab.github.io/sdk/software/api/reference/#FuelTransaction) into the MyGeotab database system.
 
 ## Configuration File properties
@@ -20,6 +21,22 @@ This describes the configuration file structure with it's properties and how to 
 
 **currencyCodeMapped** (default = USD): The ISO formatted currency code to be used if no currency code is found in the import excel file. Examples - https://www.iso.org/iso-4217-currency-codes.html.
 
+**productTypeRegex** A regular expression can be applied to the productType property if required. It expects and array or objects, the first property of the object is the output required e.g. Diesel or CNG and the second property is the regular expression to be applied. If a match is found the output will be returned for the productType input operation.
+
+**Note:** The [JavaScript regular expression test method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test) has been implemented as the comparison mechanism for this solution.
+
+Example:
+
+```
+"productTypeRegex": [
+{ "Diesel": "([w ]*[Dd]iesel[w ]*)|([w ]*[Nn]estle[w ]*)" },
+{ "CNG": "([w ]*[Pp]etrol[w ]*)|([w ]*[Gg]as[w ]*)" },
+{
+    "DieselExhaustFluid": "([w ]*[Aa]dblue[w ]*)|([w ]*[Ee]xhaustFluid[w ]*)"
+}
+],
+```
+
 **data**: a JSON object containing some or all of the [FuelTransaction](https://geotab.github.io/sdk/software/api/reference/#FuelTransaction) properties.
 
 The data object in the configuration file contains the Fuel Transaction fields to be imported and their column reference.
@@ -37,10 +54,12 @@ The data object in the configuration file contains the Fuel Transaction fields t
 </table>
 
 ## Examples
+
 - A shell source file can be found here [source.json](source.json).
 - The generic source reference file can be downloaded from [here](generic.json).
 
 ## <a id="DateTimeRules" name="DateTimeRules">Date And Time Rules</a>
+
 1. **dateFormat** is required
 2. If **date** and **time** are submitted in a **single** excel column then the complete **date and time format** should be provided in the **dateFormat** property of the configuration file.
 3. If **date** and **time** are submitted in **separate** excel columns then the **date format** should be provided in the **dateFormat** property and the **time format** should be provided in the **timeFormat** of the configuration file.
